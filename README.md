@@ -4,11 +4,15 @@
 <img src="movie-data.png" width="80%" height="80%">
 
 - Index reddit data with **Elasticsearch** discussing these movies: from here https://files.pushshift.io/reddit/
+   ```
   - cd reddit_data
   - python create_index.py <index_name>
-  
+  ```
  - Download sentiment dictionary for feature extraction, e.g., **Subjectivity Lexicon**: from here http://mpqa.cs.pitt.edu/#subj_lexicon
- 
+ - Predict future change in gross income based on discusssions from **Reddit**
+   ```
+   - python run.py 
+   ```
  
 
 
