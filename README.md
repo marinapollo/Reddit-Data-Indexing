@@ -1,5 +1,7 @@
 # Sales Prediction
 
+We can use text posted on social media platforms for the prediction of future sales, e.g., movie sales. 
+
 - Weekly movie data **annual_mojo_weekly_full.csv** (including weekend gross): scraped from here https://www.boxofficemojo.com/year/:
 <img src="movie-data.png" width="80%" height="80%">
 
