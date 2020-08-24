@@ -66,6 +66,7 @@ class Classificator():
                 train_years.append(test_years[k])
             
         print(f"Saving weight of {year_and_month}")
+        rolling = self.elements['rolling']
         with open('rolling'+str(rolling)+'weight'+str(self.elements['beta'])+'-'+str(year_and_month)+'.pickle', 'wb') as handle:
             pickle.dump(old_weights, handle, protocol=pickle.HIGHEST_PROTOCOL)
         
