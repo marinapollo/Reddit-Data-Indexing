@@ -24,13 +24,10 @@
    nb_classes = 1 
 
    #movie data scraped from here: https://www.boxofficemojo.com/year/
-   data_path = "/mounts/work/sedinkina/movies/annual_mojo_weekly_full.csv"
-   data = DataMovie(data_path, min_year = 2009, max_year=2018)
+   data = DataMovie("annual_mojo_weekly_full.csv", min_year = 2009, max_year=2018)
 
    #word list for feature extraction, e.g., Subjectivity Lexicon from http://mpqa.cs.pitt.edu/#subj_lexicon
-   opinion_wordlist = "/mounts/data/proj/sedinkina/reddit/subjclueslen1-HLTEMNLP05.tff"
-   lexTokenizer = LexiconTokenizer(opinion_wordlist)
-
+   lexTokenizer = LexiconTokenizer("subjclueslen1-HLTEMNLP05.tff")
 
    #reddit data from https://files.pushshift.io/reddit/ is indexed using Elasticsearch
    index_name = 'reddit-index'# "day-reddit-index-all"
