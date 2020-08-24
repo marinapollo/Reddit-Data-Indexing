@@ -30,7 +30,7 @@
    lexTokenizer = LexiconTokenizer("subjclueslen1-HLTEMNLP05.tff")
 
    #reddit data from https://files.pushshift.io/reddit/ is indexed using Elasticsearch
-   index_name = 'reddit-index'# "day-reddit-index-all"
+   index_name = 'reddit-index'
 
    cb = ClassificatorBuilder().add_field('data', data)\
                                .add_field('tokenizer', lexTokenizer)\
